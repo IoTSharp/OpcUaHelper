@@ -253,7 +253,7 @@ namespace OpcUaHelper
             }
             catch (Exception exception)
             {
-#if !NETSTANDARD2_0 && !NETSTANDARD2_1
+#if !NETSTANDARD2_0 && !NETSTANDARD2_1 && !NET6_0_OR_GREATER
                 ClientUtils.HandleException( OpcUaName, exception );
 #else
                 throw;
@@ -283,7 +283,7 @@ namespace OpcUaHelper
             }
             catch (Exception exception)
             {
-#if !NETSTANDARD2_0 && !NETSTANDARD2_1
+#if !NETSTANDARD2_0 && !NETSTANDARD2_1 && !NET6_0_OR_GREATER
                 ClientUtils.HandleException( OpcUaName, exception );
 #else
                 throw;
